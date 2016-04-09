@@ -44,4 +44,4 @@ motor can be used if you need more speed, but they can be noise.
 I am still working on the overall mechanics, but this is how it looks now.
 ![Motor and bracket](https://github.com/oangelo/Living-Curtains/blob/master/images/side2.jpg)
 ![Pulley with Bearing and bracket](https://github.com/oangelo/Living-Curtains/blob/master/images/side1.jpg)
-[![Proof of concept](https://www.youtube.com/watch?v=6lGQgefd9yU/0.jpg)](https://www.youtube.com/watch?v=6lGQgefd9yU)
+[![Proof of concept](https://img.youtube.com/vi/6lGQgefd9yU/0.jpg)](https://www.youtube.com/watch?v=6lGQgefd9yU)
