@@ -19,6 +19,12 @@ the internet. So, one should balance cost, accessibility and easiness to mount
 of the mechanical parts. To make things easy, this project uses parts typically
 found in 3D printers, they are not much cheap but are easy to find in the
 internet and of easy assembly.
+In this way, is possible to get a discrete system, since wives usually do not
+permit the installation of odd things in the house.
+
+The the 28BYJ-48 step motors are very slow, but they are very cheap and make no
+noise and have enough force to move heavy curtains. A large continuous servo
+motor can be used if you need more speed, but they can be noise.
 
 # Bill of material (BOM)
 
@@ -31,9 +37,11 @@ internet and of easy assembly.
 * 20T 5mm Bore 6mm GT2 Timing belt Idler Pulley with Bearing For 3D Printer 
 * L Shaped Fixing Bracket 
 * Screws, Nuts and Washers
+* Power Supply (Do not use the Arduino as a power supply for the motors!)
 
 # Mounting
 
 I am still working on the overall mechanics, but this is how it looks now.
 ![Motor and bracket](https://github.com/oangelo/Living-Curtains/blob/master/images/side2.jpg)
 ![Pulley with Bearing and bracket](https://github.com/oangelo/Living-Curtains/blob/master/images/side1.jpg)
+[![Proof of concept](https://www.youtube.com/watch?v=6lGQgefd9yU/0.jpg)](https://www.youtube.com/watch?v=6lGQgefd9yU)
