@@ -1,30 +1,30 @@
 # Living Curtains
 
 This project aims to build a automation system for curtains. It might
-seems silly at first, but, can be very interesting to have automated curtains.
+seems silly at first, but, can be very interesting to have automated curtains:
 It can help you wake up more naturally in the morning, letting slowly the sun
-light come in the bed room. But it can also help to maintain the room
+light come in the bed room; It can also help to maintain the room
 temperature and save energy, on summer it can automatically close the curtains
 during the day, to avoid making the ambient too hot, and open it at night,
-letting the room cool, and the process is inverted in the winter. And many other
-applications, like [insert your idea here].
+letting the room cool, and the process can be inverted in the winter. 
+And there are many other applications, like [insert your idea here].
 
 # Foreword
 
-Probably the most challenging part of any automation project is the mechanical
-part, while electronics are advancing and right now is quite simple and cheap to
-prototype simple projects like this one, mechanical parts demands space and
-heavy tools that are expensive, and many skills that are no easy to obtain on
+The most challenging part of any automation project, probably, is the mechanics. 
+While electronics are advancing, and right now is quite simple and cheap to
+prototype simple projects like this one, mechanics demands space and
+heavy tools that are expensive, and also many skills that are no easy to obtain in
 the internet. So, one should balance cost, accessibility and easiness to mount
-of the mechanical parts. To make things easy, this project uses parts typically
-found in 3D printers, they are not much cheap but are easy to find in the
-internet and of easy assembly.
-In this way, is possible to get a discrete system, since wives usually do not
-permit the installation of odd things in the house.
+of the mechanical project. To make things easy, this project uses parts typically
+found in 3D printers, they are not much cheap, but they can be bought in the
+internet and are of easy assembly.
+In this way, is possible to get a discrete system, since wives do not
+allow the installation of odd things in the house.
 
-The the 28BYJ-48 step motors are very slow, but they are very cheap and make no
-noise and have enough force to move heavy curtains. A large continuous servo
-motor can be used if you need more speed, but they can be noise.
+The 28BYJ-48 step motors are very slow, but they are very cheap and silent, 
+and also have enough force to move heavy curtains. A large continuous servo
+motor can be used if you need more speed, but they can be noisily.
 
 # Bill of material (BOM)
 
