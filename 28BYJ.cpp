@@ -1,59 +1,34 @@
+#include "28BYJ.h"
 
-//declare variables for the motor pins
-int motorPin1 = 8;  // Blue   - 28BYJ48 pin 1
-int motorPin2 = 9;  // Pink   - 28BYJ48 pin 2
-int motorPin3 = 10; // Yellow - 28BYJ48 pin 3
-int motorPin4 = 11; // Orange - 28BYJ48 pin 4
-                       // Red    - 28BYJ48 pin 5 (VCC)
+Motor28BYJ::Motor28BYJ(int motorPin1=8, int motorPin2=9, int motorPin3=10, int motorPin4=11):
+motorPin1(motorPin1), motorPin2(motorPin2), motorPin3(motorPin3), motorPin4(motorPin4),
+motorSpeed(1) {
+    pinMode(motorPin1, OUTPUT);
+    pinMode(motorPin2, OUTPUT);
+    pinMode(motorPin3, OUTPUT);
+    pinMode(motorPin4, OUTPUT);
+}
 
-int motorSpeed = 0;     //variable to set stepper speed
+void Motor28BYJ::Step(unsigned steps){
+    for(unsigned i(0);i< steps; i++)
+        Step();
+    digitalWrite(motorPin1, LOW);
+    digitalWrite(motorPin2, LOW);
+    digitalWrite(motorPin3, LOW);
+    digitalWrite(motorPin4, LOW);
+}
 
-
-
-//////////////////////////////////////////////////////////////////////////////
-void setup() {
- //declare the motor pins as outputs
- pinMode(motorPin1, OUTPUT);
- pinMode(motorPin2, OUTPUT);
- pinMode(motorPin3, OUTPUT);
- pinMode(motorPin4, OUTPUT);
- Serial.begin(9600);
+void Motor28BYJ::ReverseStep(unsigned steps){
+    for(unsigned i(0);i< steps; i++)
+        ReverseStep();
+    digitalWrite(motorPin1, LOW);
+    digitalWrite(motorPin2, LOW);
+    digitalWrite(motorPin3, LOW);
+    digitalWrite(motorPin4, LOW);
 }
 
 
-
-void loop() {
-  motorSpeed = 0;  //scale potValue to be useful for motor
-  if(Serial.available()){
-  char command = char(Serial.read());
-  if(command == 'r'){  
-    motorSpeed = 1;  //scale potValue to be useful for motor
-   for(int i = 0; i< 200; i++)
-   clockwise();   
-  }else if( command == 'l') {
-    motorSpeed = 1;  //scale potValue to be useful for motor
-  for(int i = 0; i< 200; i++)
-   counterclockwise();
-  }
-   
-  }
- digitalWrite(motorPin1, LOW);
- digitalWrite(motorPin2, LOW);
- digitalWrite(motorPin3, LOW);
- digitalWrite(motorPin4, LOW);
-}
-
-
-
-
-
-
-
-//////////////////////////////////////////////////////////////////////////////
-//set pins to ULN2003 high in sequence from 1 to 4
-//delay "motorSpeed" between each pin setting (to determine speed)
-
-void counterclockwise (){
+void Motor28BYJ::Step(){
  // 1
  digitalWrite(motorPin1, HIGH);
  digitalWrite(motorPin2, LOW);
@@ -108,7 +83,7 @@ void counterclockwise (){
 //set pins to ULN2003 high in sequence from 4 to 1
 //delay "motorSpeed" between each pin setting (to determine speed)
 
-void clockwise(){
+void Motor28BYJ::ReverseStep(){
  // 1
  digitalWrite(motorPin4, HIGH);
  digitalWrite(motorPin3, LOW);
@@ -158,4 +133,3 @@ void clockwise(){
  digitalWrite(motorPin1, HIGH);
  delay(motorSpeed);
 }
-
