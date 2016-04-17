@@ -23,7 +23,7 @@ In this way, is possible to get a discrete system, since wives do not
 allow the installation of odd things in the house.
 
 The 28BYJ-48 step motors are very slow, but they are very cheap and silent, 
-and also have enough force to move heavy curtains. A large continuous servo
+and also have enough force to move heavy curtains (with 12v). A large continuous servo
 motor can be used if you need more speed, but they can be noisily.
 
 # Bill of material (BOM)
@@ -32,12 +32,13 @@ motor can be used if you need more speed, but they can be noisily.
 * Bluetooth or Wifi Module (HC-05/ESP8266)
 * Level conveter
 * Step Motor (28BYJ-48)
+* Optical stop switch (Endstop) 
 * PU GT2 timing belt (white)
 * 20T 5mm Bore 6mm Width GT2 Timing Belt Aluminum Drive Pulley for DIY 3D Printer 
 * 20T 5mm Bore 6mm GT2 Timing belt Idler Pulley with Bearing For 3D Printer 
 * L Shaped Fixing Bracket 
 * Screws, Nuts and Washers
-* Power Supply (Do not use the Arduino as a power supply for the motors!)
+* Power Supply of 12v (Do not use the Arduino as a power supply for the motors!)
 
 # Mounting
 
