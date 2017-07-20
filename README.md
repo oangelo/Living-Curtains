@@ -32,6 +32,7 @@ motor can be used if you need more speed, but they can be noisily.
 * Bluetooth or Wifi Module (HC-05/ESP8266)
 * Level conveter
 * Step Motor (28BYJ-48)
+* RTC (I recomend the ![DS3231](https://github.com/Makuna/Rtc/wiki) module) 
 * Optical stop switch (Endstop) 
 * PU GT2 timing belt (white)
 * 20T 5mm Bore 6mm Width GT2 Timing Belt Aluminum Drive Pulley for DIY 3D Printer 
